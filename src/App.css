@@ -96,6 +96,13 @@
   color: rgb(9, 129, 123);
 }
 
+.complete {
+  text-decoration-style: solid;
+  text-decoration-line: line-through;
+  text-decoration-color: rgb(78, 51, 58);
+  opacity: 0.6;
+}
+
 input:focus,
 button:focus {
   outline: none;
