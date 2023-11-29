@@ -71,6 +71,31 @@
   margin-right: 15px;
 }
 
+.button-complete,
+.button-delete,
+.button-edit {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 28px;
+  border-radius: 50%;
+}
+
+.button-complete {
+  color: rgb(10, 87, 10);
+  margin-right: 10px;
+}
+
+.button-edit {
+  color: rgb(122, 122, 9);
+  margin-right: 10px;
+}
+
+.button-delete {
+  color: rgb(9, 129, 123);
+}
+
 input:focus,
 button:focus {
   outline: none;
