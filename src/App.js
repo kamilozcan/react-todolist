@@ -7,6 +7,7 @@ import { ToDoList } from "./components/ToDoList";
 const App = () => {
   const [input, setInput] = useState("");
   const [toDo, setToDo] = useState([]);
+  const [editToDo, setEditToDo] = useState(null);
 
   return (
     <div className="container">
@@ -20,10 +21,12 @@ const App = () => {
             setInput={setInput}
             toDo={toDo}
             setToDo={setToDo}
+            editToDo={editToDo}
+            setEditToDo={setEditToDo}
           />
         </div>
         <div>
-          <ToDoList toDo={toDo} setToDo={setToDo} />
+          <ToDoList toDo={toDo} setToDo={setToDo} setEditToDo={setEditToDo} />
         </div>
       </div>
     </div>

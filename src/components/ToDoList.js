@@ -1,6 +1,6 @@
 import React from "react";
 
-export const ToDoList = ({ toDo, setToDo }) => {
+export const ToDoList = ({ toDo, setToDo, setEditToDo }) => {
   const handleComplete = (todo) => {
     setToDo(
       toDo.map((item) => {
@@ -10,6 +10,11 @@ export const ToDoList = ({ toDo, setToDo }) => {
         return item;
       })
     );
+  };
+
+  const handleEdit = ({ id }) => {
+    const findToDo = toDo.find((todo) => todo.id === id);
+    setEditToDo(findToDo);
   };
 
   const handleDelete = ({ id }) => {
@@ -32,7 +37,10 @@ export const ToDoList = ({ toDo, setToDo }) => {
             >
               <i className="fa fa-check-circle"></i>
             </button>
-            <button className="button-edit task-button">
+            <button
+              className="button-edit task-button"
+              onClick={() => handleEdit(todo)}
+            >
               <i className="fa fa-edit"></i>
             </button>
             <button
