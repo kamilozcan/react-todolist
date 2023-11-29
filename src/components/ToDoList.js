@@ -1,6 +1,9 @@
 import React from "react";
 
 export const ToDoList = ({ toDo, setToDo }) => {
+  const handleDelete = ({ id }) => {
+    setToDo(toDo.filter((toDo) => toDo.id !== id));
+  };
   return (
     <div>
       {toDo.map((toDo) => (
@@ -18,7 +21,10 @@ export const ToDoList = ({ toDo, setToDo }) => {
             <button className="button-edit task-button">
               <i className="fa fa-edit"></i>
             </button>
-            <button className="button-delete task-button">
+            <button
+              className="button-delete task-button"
+              onClick={() => handleDelete(toDo)}
+            >
               <i className="fa fa-trash"></i>
             </button>
           </div>
