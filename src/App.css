@@ -1,6 +1,6 @@
 * {
-margin: 0;
-padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -50,4 +50,28 @@ padding: 0;
   color: #ccc;
   background-color: #362c2c;
   cursor: pointer;
+}
+
+.todo-list {
+  display: flex;
+  margin: 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  max-height: 30px;
+}
+
+.list {
+  width: 220px;
+  background-color: rgb(78, 51, 58);
+  border: none;
+  color: #ccc;
+  font-size: 20px;
+  padding-left: 10px;
+  margin-right: 15px;
+}
+
+input:focus,
+button:focus {
+  outline: none;
 }
