@@ -28,3 +28,26 @@ padding: 0;
   text-align: center;
   margin: 30px 0;
 }
+
+.task-input {
+  outline: none;
+  width: 260px;
+  padding: 15px;
+  margin-right: 25px;
+  font-size: 20px;
+  color: #ccc;
+  background-color: #362c2c;
+  border: 1px solid #635041;
+  border-radius: 10px;
+}
+
+.button-add {
+  width: 70px;
+  padding: 15px 15px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 0;
+  color: #ccc;
+  background-color: #362c2c;
+  cursor: pointer;
+}
